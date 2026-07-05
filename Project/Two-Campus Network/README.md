@@ -3,6 +3,8 @@
 
 This project simulates a complete enterprise network infrastructure for an organization with two sites: a Headquarters (Centrale) and a Branch Office (Succursale), connected over a site-to-site VPN through a simulated ISP/Internet cloud. The design focuses on high availability, network segmentation, and secure inter-site communication.
 
+
+
 # Topology Summary
 # Two independent sites:
 Each with its own internet edge router, core/distribution layer, access layer, and end devices.
@@ -16,6 +18,8 @@ At each site, cross-connected in a partial mesh for link and switch-level redund
 (e.g., Transport, Market, Administration, Store, Technician, Security) connecting PCs, printers, an IP camera, and IP phones.
 # Server farms: 
 At each site providing Active Directory/DNS, file storage, web/mail, printing, and a replica server for redundancy.
+
+
 
 # Key Technologies Implemented
 # VLANs: 
@@ -34,6 +38,8 @@ Encrypted tunnel between HQ and Branch routers over the public/ISP link, allowin
 Structured addressing scheme with distinct subnets per VLAN and per site, plus point-to-point subnets for router-to-router and WAN links.
 # Converged Network Services: 
 IP telephony (Cisco phones) and an IP security camera integrated alongside data VLANs.
+
+
 
 # What This Project Demonstrates
 Designing for high availability at both the routing and switching layers.
